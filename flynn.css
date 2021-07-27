@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: aqua;
+}
+
+.content-column {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+section {
+    width: 100%;
+}
+
+#hero {
+    background-color: blue;
+    height: 400px;
+}
+
+#hero-action {
+    padding: 10% 0;
+    width: 50%;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.card {
+    
+    width: 30%;
+}
+
+#services {
+    background-color: cadetblue;
+}
+
+footer {
+    background-color: darkcyan;
+}
