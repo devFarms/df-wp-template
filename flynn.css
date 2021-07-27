@@ -5,17 +5,17 @@ font-family: 'Montserrat', sans-serif;
 */
 
 * {
-    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 body {
     background-image: url(2392614.jpg);
-    background-position: 0 -300px;
+    background-position: center -500px;
     background-repeat: no-repeat;
     background-size: cover;
-
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
 }
 
 h1, h2, h3 {
@@ -38,27 +38,32 @@ section {
 
 #hero {
     color: white;
-    font-size: 200%;
-    height: 700px;
-    line-height: 115%;
+    height: 500px;
 }
 
 #hero-action {
-    padding: 20% 0;
+    background-color: aqua;
+    border-radius: 20px;
+    margin: 20% 0;
+    padding: 50px;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
     width: 50%;
 }
 
+#cards, #services, #philosophy {
+    padding: 100px 0;
+}
 #cards {
     background-color: white;
-    padding: 100px 0 0 0;
 }
 .cards {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
 }
 .card {
-    
+    padding: 30px;
+    text-align: center;
     width: 30%;
 }
 
