@@ -4,26 +4,53 @@ font-family: 'Fugaz One', cursive;
 font-family: 'Montserrat', sans-serif;
 */
 
+:root {
+    --blue-sky: rgba(77, 229, 250, 0.5);
+    --red-button: rgb(230, 45, 40);
+    --gray-text: rgb(107, 107, 107);
+    --purple-header: rgb(63, 43, 93);
+    --light-gray: rgb(220, 220, 220);
+    --font-logo: 'Fugaz One', sans-serif;
+  }
+
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-image: url(2392614.jpg);
-    background-position: center -500px;
-    background-repeat: no-repeat;
-    background-size: cover;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
 }
 
+/* Style the video: 100% width and height to cover the entire window */
+video#bgVideo { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../video/bg.png) no-repeat;
+    background-size: cover; 
+  }
+
 h1, h2, h3 {
-    font-family: 'Fugaz One', sans-serif;
+    font-family: var(--font-logo);
 }
 
-header {
-
+#header {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 60%;
 }
 
 .content-column {
@@ -36,18 +63,90 @@ section {
     width: 100%;
 }
 
+#logo {
+    font-family: var(--font-logo);
+    font-size: 200%;
+    height: 110px;
+    overflow: hidden;
+    position: fixed;
+    text-align: center;
+    width: 120px;
+}
+#logo a, a:visited {
+    color: white;
+}
+
+.logo-text {
+    margin: 0 auto;
+    padding: 10px 0;
+    position: absolute;
+    width: 120px;
+    z-index: 100;
+}
+
+.logo-angle {
+    background-color: var(--red-button);
+    height: 200px;
+    margin-top: -130px;
+    margin-left: -50px;
+    transform: rotate(-15deg);
+    width: 200px;
+}
+
+nav {
+    /* background-color: chartreuse; */
+    text-align: right;
+    width: 100%;
+}
+nav li {
+    display: inline;
+    padding: 0 20px 0 0;
+}
+
+#search {
+    /* background-color: aquamarine; */
+    text-align: center;
+    width: 100px;
+}
+#profile {
+    /* background-color: brown; */
+    text-align: center;
+    width: 100px;
+}
+
 #hero {
     color: white;
-    height: 500px;
+    height: 625px;
 }
 
 #hero-action {
-    background-color: aqua;
     border-radius: 20px;
-    margin: 20% 0;
-    padding: 50px;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
-    width: 50%;
+    margin: 0;
+    padding: 50px 0 0 0;
+    text-align: center;
+    width: 100%;
+}
+
+#hero-logo {
+    font-family: var(--font-logo);
+    font-size: 700%;
+}
+
+#hero-action button {
+    background-color: var(--red-button);
+    color: white;
+    margin: 20px;
+    text-decoration-color: rgb(181, 35, 35);
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 5px;
+}
+
+button {
+    border: none;
+    border-radius: 50px;
+    font-size: 100%;
+    padding: 20px 30px;
 }
 
 #cards, #services, #philosophy {
@@ -55,6 +154,10 @@ section {
 }
 #cards {
     background-color: white;
+    color: var(--gray-text);
+}
+#cards h2 {
+    color: var(--purple-header);
 }
 .cards {
     display: flex;
@@ -67,8 +170,15 @@ section {
     width: 30%;
 }
 
+.card button {
+    background-color: var(--purple-header);
+    color: white;
+    margin: 20px 0 0 0;
+}
+
 #services {
-    background-color: cadetblue;
+    background-color: var(--light-gray);
+    color: white;
 }
 
 footer {
