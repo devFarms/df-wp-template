@@ -211,6 +211,29 @@ p {
     margin: 0 0 30px 0;
 }
 
+#tri-boxes {
+    background-color: indianred;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.tri-box {
+    height: 400px;
+    width: 33%;
+}
+
+#quad-boxes {
+    background-color: cadetblue; 
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.quad-box {
+    height: 400px;
+    width: 25%;
+}
+
+
 footer {
     background-color: darkcyan;
 }
